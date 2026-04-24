@@ -67,7 +67,7 @@ Top-level attributes on the `<widget>` element:
 </property>
 ```
 
-- **`<caption>` text must be max 24 characters** — longer captions are truncated in the Studio Pro UI
+- **`<caption>` text must be max 24 characters** — longer captions are truncated in the Studio Pro UI. Exception: `type="widgets"` properties render their caption differently and are not subject to this limit.
 - `dataSource` — binds the property to a datasource (required for `attribute`, `widgets`, `action` used on list items)
 - `required` — whether the property must be configured before the widget can be used
 

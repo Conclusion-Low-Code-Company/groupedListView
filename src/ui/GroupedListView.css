@@ -12,11 +12,11 @@ ul.glv__list .glv__listItem {
     font-size: 1.2em;
 }
 
-.link {
+.glv__listItem--link {
     cursor: pointer;
 }
 
-.sticky {
+.glv__listHeader--sticky {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;

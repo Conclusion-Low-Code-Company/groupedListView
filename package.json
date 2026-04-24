@@ -3,7 +3,7 @@
   "widgetName": "GroupedListView",
   "version": "1.0.1",
   "description": "In this list items are grouped.",
-  "copyright": "@ Conclusion Low Code Company, 2022. All rights reserved.",
+  "copyright": "© Conclusion Low Code Company, 2022. All rights reserved.",
   "author": "Bart Heijs",
   "engines": {
     "node": ">=12"

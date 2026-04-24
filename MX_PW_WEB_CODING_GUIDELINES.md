@@ -17,4 +17,4 @@
 - Ensure high accessibility (a11y) standards using ARIA roles and accessibility props.
 - NEVER edit the typings in the typings/*.d.ts file. This is handled in the "npm start" command.
 - place hard coded values in capitalized constants on top of the file.
-- Property `<caption>` text in './src/*.xml' can be max 24 characters (longer ones are not readable in Mendix Studio Pro UI)
+- Property `<caption>` text in './src/*.xml' can be max 24 characters (longer ones are not readable in Mendix Studio Pro UI). Exception: `type="widgets"` properties are not subject to this limit.
