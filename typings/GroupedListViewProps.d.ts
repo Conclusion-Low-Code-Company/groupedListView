@@ -1,7 +1,7 @@
 /**
  * This file was generated from GroupedListView.xml
  * WARNING: All changes made to this file will be overwritten
- * @author Mendix UI Content Team
+ * @author Mendix Widgets Framework Team
  */
 import { ComponentType, CSSProperties, ReactNode } from "react";
 import { ListValue, ListActionValue, ListAttributeValue, ListWidgetValue } from "mendix";
@@ -13,8 +13,8 @@ export interface GroupedListViewContainerProps {
     tabIndex?: number;
     inputList: ListValue;
     groupId: ListAttributeValue<string>;
-    groupTitle?: ListWidgetValue;
-    widget?: ListWidgetValue;
+    groupTitle: ListWidgetValue;
+    widget: ListWidgetValue;
     emptyMessage?: ReactNode;
     stickyGroupHeaders: boolean;
     listItemClick?: ListActionValue;

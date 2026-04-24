@@ -20,6 +20,7 @@ export default function GroupedList(props: GroupedListViewContainerProps): React
                         lastKnownGroupId = props.groupId.get(item).value!;
 
                         return (
+                            // Fragment is used here to keep the html semantics in place
                             <Fragment>
                                 <GroupTitle
                                     groupTitle={props.groupTitle}
