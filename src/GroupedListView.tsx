@@ -13,7 +13,10 @@ import "./ui/GroupedListView.css";
  * @param props - The widget container props provided by Mendix.
  */
 export function GroupedListView(props: GroupedListViewContainerProps): ReactElement {
-    // if there is no list input, return alert
+    if (props.inputList.status === "loading") {
+        return <div />;
+    }
+
     if (!props.inputList.items) {
         console.warn(LOG_PREFIX, "inputList.items is undefined — check datasource configuration.");
         return <AlertMessage />;
