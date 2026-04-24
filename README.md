@@ -28,7 +28,7 @@ The source for the widget is a list of objects that have a string attribute serv
 
 # Compatibility
 
-Mendix 9.0.5 or higher
+Mendix 9.6.15 or higher.
 
 # Known bugs
 
