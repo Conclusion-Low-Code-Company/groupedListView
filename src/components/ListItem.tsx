@@ -16,7 +16,6 @@ export interface ListItemProps {
  * @param listItemClick - Optional Mendix action executed when the item is clicked.
  */
 export default function ListItem({ widget, item, listItemClick }: ListItemProps): ReactElement {
-
     // Define the click handler function, memoized to avoid unnecessary recreation on re-renders
     const clickHandler = useCallback(() => {
         // Get the action associated with the item
@@ -30,7 +29,10 @@ export default function ListItem({ widget, item, listItemClick }: ListItemProps)
     // Return the list item element
     // if the listItemClick is defined add the class "link" and attach the clickHandler
     return (
-        <li className={`glv__listItem${listItemClick ? " glv__listItem--link" : ""}`} onClick={listItemClick ? clickHandler : undefined}>
+        <li
+            className={`glv__listItem${listItemClick ? " glv__listItem--link" : ""}`}
+            onClick={listItemClick ? clickHandler : undefined}
+        >
             {widget.get(item)}
         </li>
     );

@@ -22,8 +22,11 @@ export default function GroupedList(props: GroupedListViewContainerProps): React
                 {props.inputList.items!.map(item => {
                     // Map over the list items and render each item
                     const currentGroupId = props.groupId.get(item).value ?? "";
-                    if (currentGroupId === "" ) {
-                        console.warn(LOG_PREFIX, `groupId value is undefined for item ${item.id} — ensure the datasource is sorted and the groupId attribute has a value.`);
+                    if (currentGroupId === "") {
+                        console.warn(
+                            LOG_PREFIX,
+                            `groupId value is undefined for item ${item.id} — ensure the datasource is sorted and the groupId attribute has a value.`
+                        );
                     }
 
                     if (currentGroupId !== lastKnownGroupId) {
@@ -39,11 +42,7 @@ export default function GroupedList(props: GroupedListViewContainerProps): React
                                     item={item}
                                     stickyGroupHeaders={props.stickyGroupHeaders}
                                 />
-                                <ListItem
-                                    widget={props.widget}
-                                    item={item}
-                                    listItemClick={props.listItemClick}
-                                />
+                                <ListItem widget={props.widget} item={item} listItemClick={props.listItemClick} />
                             </Fragment>
                         );
                     }

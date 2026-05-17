@@ -17,5 +17,9 @@ export interface GroupTitleProps {
 export default function GroupTitle({ groupTitle, item, stickyGroupHeaders }: GroupTitleProps): ReactElement {
     // Return the list header element
     // Add "sticky" class if stickyGroupHeaders flag is true
-    return <li className={`glv__listHeader${stickyGroupHeaders ? " glv__listHeader--sticky" : ""}`}>{groupTitle.get(item)}</li>;
+    return (
+        <li className={`glv__listHeader${stickyGroupHeaders ? " glv__listHeader--sticky" : ""}`}>
+            {groupTitle.get(item)}
+        </li>
+    );
 }
