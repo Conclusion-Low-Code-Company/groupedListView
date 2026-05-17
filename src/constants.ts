@@ -1,1 +1,1 @@
-export const LOG_PREFIX = "[GroupedListView]";
+export const LOG_PREFIX = "GroupedListView: ";
