@@ -28,7 +28,10 @@ The source for the widget is a list of objects that have a string attribute serv
 
 # Compatibility
 
-Mendix 9.6.15 or higher.
+Tested in:
+- Mendix Studio Pro 9.24.42
+- Mendix Studio Pro 10.24.15
+- Mendix Studio Pro 11.6.5
 
 # Known bugs
 
